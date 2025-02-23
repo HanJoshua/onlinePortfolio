@@ -634,6 +634,89 @@ h1.intro-text {
   transform: scale(1.1);
 }
 
+
+
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #7b9ce3;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-section {
+  flex: 1;
+  min-width: 50%;
+}
+
+.right-section {
+  flex: 1;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bio {
+  color: #081f5c;
+  text-align: justify;
+  font-size: small;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  border: 3px solid #405c98;
+  padding: 20px;
+  color: #081f5c;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: white;
+}
+
+.card h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.card ul {
+  font-size: small;
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    min-width: 100%;
+  }
+}
 .modal {
   display: none;
   position: fixed;
@@ -695,62 +778,4 @@ button {
 
 .nav-link:hover {
   color: #456aa8;
-}
-
-
-
-.left-section {
-  flex: 1;
-  min-width: 50%;
-}
-
-.right-section {
-  flex: 1;
-  min-width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.bio {
-  color: #081f5c;
-  text-align: justify;
-  font-size: small;
-  padding: 20px;
-}
-
-.card {
-  border-radius: 30px;
-  border: 3px solid #405c98;
-  padding: 20px;
-  color: #081f5c;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: white;
-}
-
-.card h4 {
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-}
-
-.card ul {
-  font-size: small;
-  list-style: none;
-  padding-left: 0;
-}
-
-.card ul li {
-  margin-bottom: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .left-section, .right-section {
-    min-width: 100%;
-  }
 }
