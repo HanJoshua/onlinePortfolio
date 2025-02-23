@@ -639,11 +639,15 @@ h1.intro-text {
 
 .profile-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content */
   gap: 20px;
   padding: 20px;
   background-color: #7b9ce3;
+}
+
+.info {
+  margin-top: 10px; /* Add spacing between profile and text */
 }
 
 .about-container {
@@ -678,7 +682,7 @@ h1.intro-text {
 }
 
 .card {
-  border-radius: 15px;
+  border-radius: 35px;
   border: 3px solid #405c98;
   padding: 20px;
   color: #081f5c;
