@@ -220,7 +220,7 @@ nav li a:active {
 section {
   width: 100%;
 
-  height: 100svh;
+
   position: relative;
   padding: 20px 9vw;
   letter-spacing: 0.2rem;
@@ -643,6 +643,8 @@ h1.intro-text {
   align-items: center; /* Center content */
   gap: 20px;
   padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #7b9ce3;
 }
 
@@ -708,18 +710,157 @@ h1.intro-text {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .profile-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .about-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
   }
 
   .left-section, .right-section {
-    min-width: 100%;
+    width: 100%; /* Take full width on small screens */
+    padding: 10px;
   }
+
+  .profile img {
+    width: 120px; /* Reduce image size */
+    height: 120px;
+  }
+
+  .info h1 {
+    font-size: 20px; /* Reduce title size */
+  }
+
+  .heading1 h3 {
+    font-size: 22px; /* Resize About Me heading */
+    text-align: center;
+  }
+
+  .card {
+    width: 90%; /* Adjust card width for mobile */
+    margin: 10px auto;
+  }
+
+  .animated-text {
+    font-size: 12px;
+    font-weight: 180;
+    min-width: 180px;
+  }
+  
+  .animated-text span {
+    position: relative;
+  }
+  
+  .animated-text span::before {
+    content: "Youtuber";
+    color: #2d2928;
+    animation: words 20s infinite;
+  }
+  
+  .animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #7b9ce3;
+    border-left: 6px solid #91472d;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+  }
+  
+  @keyframes cursor {
+    to {
+      border-left: 2px solid #ff7f5000;
+    }
+  }
+  
+  @keyframes words {
+    0%,
+    20% {
+      content: "ETHAN JOSHUA";
+    }
+  
+    21%,
+    40% {
+      content: " Multimedia Computing Student";
+    }
+  
+    41%,
+    60% {
+      content: "Front-end Developer to be";
+    }
+  
+    61%,
+    80% {
+      content: "Web Developer to be";
+    }
+  
+    81%,
+    100% {
+      content: "Sleepy person";
+    }
+  }
+  
+  @keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+      width: 0;
+    }
+  
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+      width: calc(100% + 8px);
+    }
+  }
+  
+  #typed-cursor {
+    opacity: 1;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 50;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+  }
+  
+  .heading1 h3 {
+    font-family: "Fugaz One", cursive;
+    font-size: 30px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #405c98;
+    text-align: center;
+    letter-spacing: -1px;
+    padding: 80px;
+  }
+  
+  .heading1 h3 {
+    width: 100%;
+    letter-spacing: 0.2em;
+    line-height: 0.5em;
+    position: relative;
+    padding: 1em 0 1em;
+    border-bottom: 5px solid #ccc;
+  }
+  
 }
 .modal {
   display: none;
