@@ -731,6 +731,7 @@ h1.intro-text {
   }
 
   .heading1 h3 {
+    font-family: "Fugaz One";
     font-size: 22px; /* Resize About Me heading */
     text-align: center;
   }
