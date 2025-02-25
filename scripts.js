@@ -51,7 +51,7 @@ function nextImage() {
   slideshowElement.src = images[currentIndex];
 }
 
-setInterval(nextImage, 1750); // Change image every 2 seconds
+setInterval(nextImage, 1900); // Change image every 2 seconds
 
 $("h3").each(function (index, element) {
   var animation = TweenMax.to(this, 0.2, {
