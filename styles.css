@@ -780,25 +780,25 @@ h1.intro-text {
       content: "ETHAN JOSHUA";
     }
   
-    21%,
-    40% {
-      content: " Multimedia Computing Student";
-    }
-  
-    41%,
-    60% {
-      content: "Front-end Developer to be";
-    }
-  
-    61%,
-    80% {
-      content: "Web Developer to be";
-    }
-  
-    81%,
-    100% {
-      content: "Sleepy person";
-    }
+  21%,
+  40% {
+    content: "Final Year Student";
+  }
+
+  41%,
+  60% {
+    content: "Web Developer to be";
+  }
+
+  61%,
+  80% {
+    content: "Front-end Developer to be";";
+  }
+
+  81%,
+  100% {
+    content: "UI/UX Enthusiast";
+  }
   }
   
   @keyframes typing {
