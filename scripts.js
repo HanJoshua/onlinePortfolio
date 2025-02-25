@@ -42,7 +42,7 @@ navItems.forEach((nav) => {
   nav.addEventListener("click", toggleNav);
 });
 
-var images = ["mee.jpg", "mi.jpg"]; // Array of image file names
+var images = ["mee.jpg","mii.JPG", "mi.jpg", "im.JPG"]; // Array of image file names
 var currentIndex = 0;
 var slideshowElement = document.getElementById("slideshow");
 
@@ -51,7 +51,7 @@ function nextImage() {
   slideshowElement.src = images[currentIndex];
 }
 
-setInterval(nextImage, 2000); // Change image every 2 seconds
+setInterval(nextImage, 1750); // Change image every 2 seconds
 
 $("h3").each(function (index, element) {
   var animation = TweenMax.to(this, 0.2, {
