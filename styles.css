@@ -782,12 +782,12 @@ h1.intro-text {
   
   21%,
   40% {
-    content: "Final Year Student";
+    content: "Fresh Grad";
   }
 
   41%,
   60% {
-    content: "Web Developer to be";
+    content: "QA Engineer/Software Tester";
   }
 
   61%,
@@ -925,4 +925,5 @@ button {
 .nav-link:hover {
   color: #456aa8;
 }
+
 
